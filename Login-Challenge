@@ -1,0 +1,14 @@
+Used the inspect element to see the html code
+Found a script with source labeled /js/inviteapi.min.js
+Went to that address
+Found a function "makeInviteCode"
+Back to login screen
+Console Tab in Chrome Developer Tools
+Type makeInviteCode()
+Grabbed the encoded message and decoded it.
+Told me to go to /api/invite/generate
+In terminal, curl -XPOST https://www.hackthebox.eu/api/invite/generate
+Got an encoded invite code
+Decoded
+Entered
+Booyah
