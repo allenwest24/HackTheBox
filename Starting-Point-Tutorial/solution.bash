@@ -52,3 +52,5 @@ smb: \>
 // There is a dtsConfig file, which is a config file used with SSIS.
 .
 // We see that it contains a SQL connection string, containing credentials for the local Windows user ARCHETYPE\sql_svc.
+.
+// Let's try connecting to the SQL Server using Impacket's mssqlserver.py.
