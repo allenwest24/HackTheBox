@@ -37,11 +37,11 @@ Host script results:
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 56.54 seconds
-
+.
 // We have ports open on FTP, ssh, and Samba
 // We can check if the first service is vulnerable by copying it (vsftpd 2.3.4) and using searchsploit
 // After significant struggles of downloading git and setting the searchsploit tools correctly it worked as intended
-
+.
 $ searchsploit vsftpd 2.3.4
 [i] Found (#2): /opt/exploit-database/files_exploits.csv
 [i] To remove this message, please edit "/opt/exploit-database/.searchsploit_rc" for "files_exploits.csv" (package_array: exploitdb)
@@ -56,9 +56,9 @@ $ searchsploit vsftpd 2.3.4
 vsftpd 2.3.4 - Backdoor Command Execution (Metasploit)                                                    | exploits/unix/remote/17491.rb
 ---------------------------------------------------------------------------------------------------------- -----------------------------------------
 Shellcodes: No Result
-
+.
 // Had to install metasploit
-
+.
 $ mfsconsole
 msf5 > search samba 3.0.20
 
