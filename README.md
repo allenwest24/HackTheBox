@@ -9,6 +9,6 @@ Systems owned: 1
 Total Points: 
 
 # Top 10 Hardest Machines (1 = hardest):
-1.
-2.
-3.
+1. Traverxec
+2. SystemAdmin
+3. Lame
