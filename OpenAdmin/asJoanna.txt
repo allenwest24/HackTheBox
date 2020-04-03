@@ -8,10 +8,10 @@ root
 # ls
 user.txt
 # cat user.txt
-c9b2cf07d40807e62af62660f0c81b5f
+********************************
 # cd /root
 # ls
 root.txt
 # cat root.txt
-2f907ed450b361b2c2bf4e8795d5b561
+********************************
 # 
