@@ -25,3 +25,11 @@ Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 8.19 seconds
+$ gobuster dir -w ~/Desktop/rockyou.txt -u 10.10.10.171
+.
+.
+.
+// This resulted in nothing and was way more effort than it was worth. 
+// It did, however give me addresses within the site to explore where we found the 
+// version was v18.1.1.
+// Switching to other terminal so I can try to find an exploit.
