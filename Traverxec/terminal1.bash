@@ -157,7 +157,7 @@ cd nostromo
 .
 cd conf
 cat .htpasswd
-david:$1$e7NfNpNi$A6nCwOTqrNR2oDuIKirRZ/
+david:********************
 .
 .
 .
