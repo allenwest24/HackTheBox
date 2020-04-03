@@ -167,13 +167,13 @@ cd makis
 ls
 user.txt
 cat user.txt
-69454a937d94f5f0225ea00acd2e84c5
+********************************
 cat root/root.txt
 cat: root/root.txt: No such file or directory
 cd ..
 whoami
 root
 cat /root/root.txt
-92caac3be140ef409e45721348a4e9df
+********************************
 
                   
