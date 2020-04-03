@@ -1,0 +1,3 @@
+Exploit found on: https://www.rapid7.com/db/modules/exploit/windows/smb/ms08_067_netapi
+
+// This was the easiest machine so basically all you had to do was find the exploit online. LOL
