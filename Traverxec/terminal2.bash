@@ -32,7 +32,7 @@ Desktop    Downloads  Pictures  Templates
 **********@debian:~$ chmod 600 david.pen
 **********@debian:~$ ssh -i david.pen david@10.10.10.165
 The authenticity of host '10.10.10.165 (10.10.10.165)' can't be established.
-ECDSA key fingerprint is SHA256:CiO/pUMzd+6bHnEhA2rAU30QQiNdWOtkEPtJoXnWzVo.
+ECDSA key fingerprint is SHA256:**************************.
 Are you sure you want to continue connecting (yes/no)? yes
 Warning: Permanently added '10.10.10.165' (ECDSA) to the list of known hosts.
 Enter passphrase for key 'david.pen': 
