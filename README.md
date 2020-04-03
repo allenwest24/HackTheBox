@@ -4,8 +4,9 @@ HackTheBox is a sight where you have access to vulnerable machines and challenge
 points for the more challenges you own. I will be uploading my sessions here, so that as I get better I can log what I do and realize
 better strategies for the future.
 
-- Users owned: 3
-- Systems owned: 2
+- Username: pwn3yb0i
+- Users owned: 4
+- Systems owned: 3
 - Ranks Achieved:
 Noob --> Script Kiddie --> 
 
@@ -13,3 +14,4 @@ Noob --> Script Kiddie -->
 1. Traverxec
 2. SystemAdmin
 3. Lame
+4. Legacy
