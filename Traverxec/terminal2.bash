@@ -50,4 +50,4 @@ drwxr-xr-x 3 david david 4096 Oct 25 15:45 public_www
 drwx------ 2 david david 4096 Oct 25 17:02 .ssh
 -r--r----- 1 root  david   33 Oct 25 16:14 user.txt
 david@traverxec:~$ cat user.txt
-7db0b48469606a42cec20750d9782f3d
+*******************************
