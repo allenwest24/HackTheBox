@@ -100,3 +100,14 @@ Nmap done: 1 IP address (1 host up) scanned in 15.61 seconds
 // Went to the IP address of the http-proxy service running on port 8080
 // Found note on site: Message to server devs: "the current source code for the web 
 // server is in 'SuperSecureServer.py' in the secret development directory"
+.
+.
+.
+allenwest1@debian:~$ wfuzz -c --hc 404 -z file, '~/Desktop/rockyou.txt' --c 404 
+http://10.10.10.168:8080/FUZZ/SuperSecureServer.py
+.
+.
+.
+// First code 200 response we got was 'develop'
+// Go to: http://10.10.10.168:8080/develop/SuperSecureServer.py
+// Now we have the source code for the server!
