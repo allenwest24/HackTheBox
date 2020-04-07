@@ -5,14 +5,15 @@ you get points for the more challenges you own. I will be uploading my sessions 
 and realize better strategies for the future.
 
 - Username: pwn3yb0i
-- Users owned: 5
-- Systems owned: 4
+- Users owned: 6
+- Systems owned: 5
 - Ranks Achieved:
 Noob --> Script Kiddie --> (Retired machines don't add points towards your rank so it's slow-going.)
 
 # Top 10 Hardest Machines (1 = hardest):
-1. Traverxec
-2. SystemAdmin
-3. Lame
-4. Jerry
-5. Legacy
+1. Obscurity
+2. Traverxec
+3. SystemAdmin
+4. Lame
+5. Jerry
+6. Legacy
