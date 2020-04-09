@@ -83,3 +83,18 @@ Requests/sec.: 9.592121
 // Tried the passwords in the smevk.php file.
 // admin:admin worked
 // Where I went on the site can be found in the smevk.com file.
+.
+.
+.
+allenwest1@debian:~$ cd .ssh
+allenwest1@debian:~/.ssh$ ls
+known_hosts
+allenwest1@debian:~/.ssh$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/allenwest1/.ssh/id_rsa): 
+Enter passphrase (empty for no passphrase): 
+Enter same passphrase again: 
+Your identification has been saved in /home/allenwest1/.ssh/id_rsa.
+Your public key has been saved in /home/allenwest1/.ssh/id_rsa.pub.
+allenwest1@debian:~/.ssh$ ls
+id_rsa  id_rsa.pub  known_hosts
