@@ -76,3 +76,10 @@ Total time: 2.085044
 Processed Requests: 20
 Filtered Requests: 0
 Requests/sec.: 9.592121
+.
+.
+.
+// Used this info and tried to go to http://10.10.10.181/smevk.php
+// Tried the passwords in the smevk.php file.
+// admin:admin worked
+// Where I went on the site can be found in the smevk.com file.
