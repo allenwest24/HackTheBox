@@ -1,0 +1,32 @@
+// What I had to do in BurpSuite at the http://staging-order.mango.htb login screen..
+Next
+Start 
+Ok
+...
+Proxy
+Intercept is on
+// Back to the mango site
+three lines upper right corner
+Preferences
+Search for proxy\
+Settings
+Manual proxy configuration
+in HTTP Proxy: port 8080
+refresh mango site
+turn intercept on again
+try admin:admin
+in burpSuite we see: username=admin&password=admin&login=login
+HTTP history
+2 POSTS, 1GET
+backk to intercept
+right click --> Send to Repeater
+go to repeater
+Sent
+found that web use platform is php
+Now I am going to try db injection
+change: username=admin&password=admin&login=login --> username[$regex]=admin&password[$ne]=1&login=login
+run
+HTTP/1.1 303 Found
+changed random password.
+200
+will use db_inection.py
