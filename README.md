@@ -5,8 +5,8 @@ you get points for the more challenges you own. I will be uploading my sessions 
 and realize better strategies for the future.
 
 - Username: pwn3yb0i
-- Users owned: 8
-- Systems owned: 5
+- Users owned: 9
+- Systems owned: 6
 - Ranks Achieved:
 Noob --> Script Kiddie --> (Retired machines don't add points towards your rank so it's slow-going.)
 
@@ -19,3 +19,4 @@ Noob --> Script Kiddie --> (Retired machines don't add points towards your rank 
 6. Lame
 7. Jerry
 8. Legacy
+9. Blue
