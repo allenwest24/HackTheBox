@@ -7,9 +7,9 @@ and realize better strategies for the future.
 - Username: pwn3yb0i
 - Users Owned: 10
 - Systems Owned: 6
-- Challenges Completed: 1
+- Challenges Completed: 2
 - Ranks Achieved:
-Noob --> Script Kiddie --> 39% towards Hacker (Retired machines don't add points towards your rank so it's slow-going.)
+Noob --> Script Kiddie --> 40.73% towards Hacker (Retired machines don't add points towards your rank so it's slow-going.)
 
 # Top 10 Hardest Machines (1 = hardest):
 1. Obscurity
