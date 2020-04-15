@@ -1,0 +1,23 @@
+// @ the site: https://asecuritysite.com/encryption/ferdecode
+
+Token: gAAAAABaDDCRPXCPdGDcBKFqEFz9zvnaiLUbWHqxXqScTTYWfZJcz-WhH7rf_fYHo67zGzJAdkrwATuMptY-nJmU-eYG3HKLO9WDLmO27sex1-R85CZEFCU=
+Key: hBU9lesroX_veFoHz-xUcaz4_ymH-D8p28IP_4rtjq0=
+
+*Determine*
+
+Decoded:	Flag : HTB{***********}
+Date created:	Wed Nov 15 12:18:25 2017
+Current time:	Wed Apr 15 17:45:51 2020
+
+======Analysis====
+Decoded data:  80000000005a0c30913d708f7460dc04a16a105cfdcef9da88b51b587ab15ea49c4d36167d925ccfe5a11fbadffdf607a3aef31b3240764af0013b8ca6d63e9c9994f9e606dc728b3bd5832e63b6eec7b1d7e47ce426441425
+Version:	80
+Date created:	000000005a0c3091
+IV:		3d708f7460dc04a16a105cfdcef9da88
+Cipher:		b51b587ab15ea49c4d36167d925ccfe5a11fbadffdf607a3aef31b3240764af0
+HMAC:		013b8ca6d63e9c9994f9e606dc728b3bd5832e63b6eec7b1d7e47ce426441425
+
+======Converted====
+IV:		3d708f7460dc04a16a105cfdcef9da88
+Time stamp:	1510748305
+Date created:	Wed Nov 15 12:18:25 2017
