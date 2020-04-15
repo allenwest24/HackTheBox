@@ -6,7 +6,7 @@ and realize better strategies for the future.
 
 - Username: pwn3yb0i
 - Users Owned: 10
-- Systems Owned: 6
+- Systems Owned: 7
 - Challenges Completed: 3
 - Ranks Achieved:
 Noob --> Script Kiddie --> 42.53% towards Hacker (Retired machines don't add points towards your rank so it's slow-going.)
