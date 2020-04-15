@@ -17,3 +17,10 @@ smb: \mhope\> ls
 smb: \mhope\> get azure.xml
 getting file \mhope\azure.xml of size 1212 as azure.xml (11.4 KiloBytes/sec) (average 11.4 KiloBytes/sec)
 smb: \mhope\> exit
+.
+.
+.
+// Continue in terminal2.bash
+.
+.
+.
