@@ -1,0 +1,18 @@
+// @ the site https://www.base64decode.org/
+
+<in>
+RCdgTl45OFs8O3tGMlZVNTRRPythcUw6bVxJNmlYJmYkMEBSeFBfdSldeHFwdW5tM3Fwb2htZmUrTGJnZl9eXSNhYFleV1Z6VFNY
+UVZVTnJMUVBPTkdrS0QsSEFlKERDPDtfPz5+fTVZOTg3dzUuUjJyMC8oJyZKKikoJyYlfHtBeX53djx6eXhxWTZ0c1VUcG9oLnk=
+
+<out>
+D'`N^98[<;{F2VU54Q?+aqL:m\I6iX&f$0@RxP_u)]xqpunm3qpohmfe+Lbgf_^]#a`Y^WVzTSXQVUNrLQPONGkKD,HAe(DC<;_?>
+~}5Y987w5.R2r0/('&J*)('&%|{Ay~wv<zyxqY6tsUTpoh.y
+
+.
+.
+.
+// Determined to be encoded in Malbolge now.
+// See decodeMalbolge.txt
+.
+.
+.
