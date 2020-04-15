@@ -1,0 +1,6 @@
+This was a relatively easy one but sort of tricky as well. The first thing you do is download and unzip 
+ass can be seen in terminal1.bash. From there I looked at the forest.jpg that came out and played with it in 
+editing software. When highlights were turned up, you could see the message 'IsJuS1Af0r3sTbR0' popped up.
+
+I then used stegohide extract with that as the passphrase and it resulted in a .txt file. The file had a coded
+that was pretty apparently a caeser cipher by 13. Easy day.
