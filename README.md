@@ -9,7 +9,7 @@ and realize better strategies for the future.
 - Systems Owned: 7
 - Challenges Completed: 3
 - Ranks Achieved:
-Noob --> Script Kiddie --> 42.53% towards Hacker (Retired machines don't add points towards your rank so it's slow-going.)
+Noob --> Script Kiddie --> 60.13% towards Hacker (Retired machines don't add points towards your rank so it's slow-going.)
 
 # Top 10 Hardest Machines (1 = hardest):
 1. Obscurity
