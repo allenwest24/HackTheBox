@@ -5,10 +5,11 @@ you get points for the more challenges you own. I will be uploading my sessions 
 and realize better strategies for the future.
 
 - Username: pwn3yb0i
-- Users owned: 10
-- Systems owned: 6
+- Users Owned: 10
+- Systems Owned: 6
+- Challenges Completed: 1
 - Ranks Achieved:
-Noob --> Script Kiddie --> (Retired machines don't add points towards your rank so it's slow-going.)
+Noob --> Script Kiddie --> 39% towards Hacker (Retired machines don't add points towards your rank so it's slow-going.)
 
 # Top 10 Hardest Machines (1 = hardest):
 1. Obscurity
