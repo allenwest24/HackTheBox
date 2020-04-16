@@ -1,0 +1,23 @@
+unzip retro
+
+binwalk -e retro.jpg
+
+got retro.hjpg
+
+wave file and text file
+
+decode wave file:
+
+java -jar turgen.jar
+
+Get message:
+
+Retro style is nice! I hope you can find the "flag" like we usually did in the eighties
+
+strings *.tm
+retro
+retro
+"**************"
+"**************"
+
+Answer is HTB{**************}
