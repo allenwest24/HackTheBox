@@ -5,20 +5,21 @@ you get points for the more challenges you own. I will be uploading my sessions 
 and realize better strategies for the future.
 
 - Username: pwn3yb0i
-- Users Owned: 10
-- Systems Owned: 7
-- Challenges Completed: 4
+- Users Owned: 12
+- Systems Owned: 8
+- Challenges Completed: 6
 - Ranks Achieved:
-Noob --> Script Kiddie --> 61.93% towards Hacker (Retired machines don't add points towards your rank so it's slow-going.)
+Noob --> Script Kiddie --> Hacker --> 0.44% towards Pro Hacker
 
 # Top 10 Hardest Machines (1 = hardest):
 1. Obscurity
 2. Mango
-3. Traverxec
-4. SystemAdmin
-5. Treaceback
-6. Lame
-7. Jerry
-8. Legacy
-9. Blue
-10. Netmon
+3. Monteverde
+4. Traverxec
+5. SystemAdmin
+6. Treaceback
+7. Lame
+8. Jerry
+9. Legacy
+10. Blue
+
