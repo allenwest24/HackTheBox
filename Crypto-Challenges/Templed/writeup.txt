@@ -1,0 +1,9 @@
+unzip
+googled ancient ciphers and it came up with cimilair symbols.
+Decoded to:
+
+72 84 66 123 77 48 78 107 115 95 107 78 51 119 30 125
+
+Googled numbers to letters translations to get:
+
+HTB{*********}
