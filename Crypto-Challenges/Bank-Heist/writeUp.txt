@@ -9,3 +9,10 @@ I know it's a throwback, but the way flip phones worked would translate this to 
 IF YOU ARE READING THE CIPHER, YOU ARE OKAY. YOUR SHARE OF THE HEIST IS IN YOUR HOUSE. THE KEY TO
 THE LOCK IS BELOW. GO TO PARIS.
 GSV XLWV GL GSV HZU OLXP : TLIVGRIVNVMGUFMW!!
+
+made a script based on the idea that each letter's index + the letter it decodes to is 25. We did this by recoginizing the first 
+word was 'the'
+
+Translation: 
+THE CODE TO THE SAF LOCK GORETIREMENTFUND!!
+Flag: HTB{******************}
