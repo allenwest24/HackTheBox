@@ -5,7 +5,7 @@ you get points for the more challenges you own. I will be uploading my sessions 
 and realize better strategies for the future.
 
 - Username: pwn3yb0i
-- Users Owned: 12
+- Users Owned: 13
 - Systems Owned: 8
 - Challenges Completed: 6
 - Ranks Achieved:
@@ -18,8 +18,7 @@ Noob --> Script Kiddie --> Hacker --> 0.44% towards Pro Hacker
 4. Traverxec
 5. SystemAdmin
 6. Treaceback
-7. Lame
-8. Jerry
-9. Legacy
-10. Blue
-
+7. Bashed
+8. Lame
+9. Jerry
+10. Legacy
