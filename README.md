@@ -6,13 +6,13 @@ and realize better strategies for the future.
 
 - Username: pwn3yb0i
 - Team Captain of 'DarkGrayHacks'
-- Users Owned: 13
-- Systems Owned: 8
+- Users Owned: 14
+- Systems Owned: 9
 - Challenges Completed: 6
 - Ranks Achieved:
 Noob --> Script Kiddie --> Hacker --> 0.44% towards Pro Hacker
 
-# Top 10 Hardest Machines (1 = hardest):
+### Top 10 Hardest Machines (1 = hardest):
 1. Obscurity
 2. Mango
 3. Monteverde
@@ -20,6 +20,6 @@ Noob --> Script Kiddie --> Hacker --> 0.44% towards Pro Hacker
 5. SystemAdmin
 6. Treaceback
 7. Bashed
-8. Lame
-9. Jerry
-10. Legacy
+8. Blocky
+9. Lame
+10. Jerry
