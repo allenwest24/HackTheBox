@@ -5,6 +5,7 @@ you get points for the more challenges you own. I will be uploading my sessions 
 and realize better strategies for the future.
 
 - Username: pwn3yb0i
+- Team Captain of 'DarkGrayHacks'
 - Users Owned: 13
 - Systems Owned: 8
 - Challenges Completed: 6
