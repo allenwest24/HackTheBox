@@ -6,8 +6,8 @@ and realize better strategies for the future.
 
 - Username: pwn3yb0i
 - Team Captain of 'DarkGrayHacks'
-- Users Owned: 14
-- Systems Owned: 9
+- Users Owned: 15
+- Systems Owned: 10
 - Challenges Completed: 6
 - Ranks Achieved:
 Noob --> Script Kiddie --> Hacker --> 0.44% towards Pro Hacker
@@ -20,6 +20,6 @@ Noob --> Script Kiddie --> Hacker --> 0.44% towards Pro Hacker
 5. SystemAdmin
 6. Treaceback
 7. Bashed
-8. Blocky
-9. Lame
-10. Jerry
+8. Beep
+9. Blocky
+10. Lame
