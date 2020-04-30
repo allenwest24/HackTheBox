@@ -125,5 +125,33 @@ File Type: ASCII text, with CRLF line terminators
 // pasted after http://10.10.10.7
 // got a jumbled page so pressed view page source
 // code from there can be found in pageSource.txt
+// #FOPPASSWORD=passw0rd
+// FOPPASSWORD=jEhdIekWmdjE
+.
+.
+.
+allenwest1@debian:~/Desktop$ ssh root@10.10.10.7
+The authenticity of host '10.10.10.7 (10.10.10.7)' can't be established.
+RSA key fingerprint is SHA256:Ip2MswIVDX1AIEPoLiHsMFfdg1pEJ0XXD5nFEjki/hI.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '10.10.10.7' (RSA) to the list of known hosts.
+root@10.10.10.7's password: 
+Last login: Tue Jul 16 11:45:47 2019
 
+Welcome to Elastix 
+----------------------------------------------------
+
+To access your Elastix System, using a separate workstation (PC/MAC/Linux)
+Open the Internet Browser using the following URL:
+http://10.10.10.7
+
+[root@beep ~]# 
+.
+.
+.
+// root:jEhdIekWmdjE
+// continued in asRoot.bash
+.
+.
+.
 
