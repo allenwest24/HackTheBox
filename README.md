@@ -8,7 +8,7 @@ and realize better strategies for the future.
 - Team Captain of 'DarkGrayHacks'
 - Users Owned: 16
 - Systems Owned: 11
-- Challenges Completed: 6
+- Challenges Completed: 7
 - Ranks Achieved:
 Noob --> Script Kiddie --> Hacker --> 0.44% towards Pro Hacker
 
