@@ -1,0 +1,13 @@
+More information found @ https://www.ionos.com/digitalguide/server/tools/nslookup/
+
+What can nslookup be used for?
+
+There are different scenarios in which the use of nslookup is appropriate. In this way, the command-line program is an especially 
+crucial tool when resolving DNS issues. First and foremost, a data query helps find the cause of the problem at hand. For example, 
+those who use Windows and experience an issue with the active directory can use nslookup to quickly and easily check whether all 
+involved servers are converted in the domain name system as planned. Generally, this program shows its strengths when various 
+subdomains are involved – not only when it is simply a matter of checking them, but also when there are connection problems.
+
+To install on Linux:
+
+sudo apt install dnsutils
