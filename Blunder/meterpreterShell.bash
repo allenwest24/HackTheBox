@@ -10,10 +10,25 @@ pwd
 whoami
 www-data
 python -c 'import pty;pty.spawn("/bin/bash")'
+.
+.
+.
+// Here we spawned a TTY shell.
+// We had a shell, but wanted to do more so a tty shell allows for more interaction.
+.
+.
+.
 www-data@blunder:/var/www/bludit-3.9.2/bl-content/tmp$ cd /var/www
 cd /var/www
 www-data@blunder:/var/www$ export TERM=xterm
 export TERM=xterm
+.
+.
+.
+// Now we are using a terminal emulator
+.
+.
+.
 www-data@blunder:/var/www$ ls
 ls
 bludit-3.10.0a  bludit-3.9.2  html
