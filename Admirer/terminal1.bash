@@ -61,4 +61,18 @@ Gobuster v2.0.1              OJ Reeves (@TheColonial)
 .
 // Went to them.
 // will be logged in .txt files in this writeup directory.
+.
+.
+.
+// After a super long time, I connected via ftp with the ftp credentials given
+// This produced a dump.sql (useless)
+// And a html.tar.gz
+// inside this was a ton of stuff. Very annoying
+// Eventually searched into utility-scripts
+// Eventually tried going to http://10.10.10.187/utility-scripts/adminer.php
+// Bingo!
+// This was already getting on my nerves. I hate this box.
+// Searched for an exploit and was successful in finding one for adminer v 4.6.2
+// This exploit will be in the directory this writeup is in as well.
+
 
