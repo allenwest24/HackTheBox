@@ -74,5 +74,35 @@ Gobuster v2.0.1              OJ Reeves (@TheColonial)
 // This was already getting on my nerves. I hate this box.
 // Searched for an exploit and was successful in finding one for adminer v 4.6.2
 // This exploit will be in the directory this writeup is in as well.
+.
+.
+.
+// waldo:&<h5b~yK3F#{PaPB&dA}{H>
+.
+.
+.
+allenwest1@debian:~$ ssh waldo@10.10.10.187
+The authenticity of host '10.10.10.187 (10.10.10.187)' can't be established.
+ECDSA key fingerprint is SHA256:NSIaytJ0GOq4AaLY0wPFdPsnuw/wBUt2SvaCdiFM8xI.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added '10.10.10.187' (ECDSA) to the list of known hosts.
+waldo@10.10.10.187's password: 
+Linux admirer 4.9.0-12-amd64 x86_64 GNU/Linux
 
+The programs included with the Devuan GNU/Linux system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+
+Devuan GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+You have new mail.
+Last login: Thu Jun 25 19:04:12 2020 from 10.10.14.52
+waldo@admirer:~$ 
+.
+.
+.
+// Continued in asWaldo.bash
+.
+.
+.
 
