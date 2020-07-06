@@ -25,8 +25,8 @@ and realize better strategies for the future.
 ## How to contribute:
 
 If you are interested in contributing to our write-ups, please follow these steps:
-1.) Star the repository.
-2.) Find 'pwn3yb0i' on HackTheBox and star the account so I know to add you to the team.
-3.) Create a branch. (Resource: https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
-4.) Push your work to your branch.
-5.) I will merge into this master branch and you will be listed in contributors!
+  1. Star the repository.
+  2. Find 'pwn3yb0i' on HackTheBox and star the account so I know to add you to the team.
+  3. Create a branch. (Resource: https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
+  4. Push your work to your branch.
+  5. I will merge into this master branch and you will be listed in contributors!
