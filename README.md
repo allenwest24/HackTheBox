@@ -4,7 +4,7 @@ HackTheBox is a site where you have access to vulnerable machines and challenges
 you get points for the more challenges you own. We will be uploading our sessions here, so that as we get better we can log what we do
 and realize better strategies for the future.
 
-# Contributors
+## Contributors:
 
 ### allenwest24
 - Username: pwn3yb0i
@@ -21,3 +21,12 @@ and realize better strategies for the future.
 - Systems Owned: 0
 - Challenges Completed: 0
 - Ranks Achieved: Noob 
+
+## How to contribute:
+
+If you are interested in contributing to our write-ups, please follow these steps:
+1.) Star the repository.
+2.) Find 'pwn3yb0i' on HackTheBox and star the account so I know to add you to the team.
+3.) Create a branch. (Resource: https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
+4.) Push your work to your branch.
+5.) I will merge into this master branch and you will be listed in contributors!
