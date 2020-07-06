@@ -28,5 +28,5 @@ If you are interested in contributing to our write-ups, please follow these step
   1. Star the repository.
   2. Find 'pwn3yb0i' on HackTheBox and star the account so I know to add you to the team.
   3. Create a branch. (Resource: https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging)
-  4. Push your work to your branch.
+  4. Push your work to your branch in a folder named after the box. (If the box already has a writeup, add it to the folder in a subfolder called [boxName]-by[yourName].
   5. I will merge into this master branch and you will be listed in contributors!
