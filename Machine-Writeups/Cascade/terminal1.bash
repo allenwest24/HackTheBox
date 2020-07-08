@@ -47,3 +47,72 @@ Host script results:
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 149.70 seconds
+.
+.
+.
+# Ryan Thompson, Users, UK, cascade.local
+dn: CN=Ryan Thompson,OU=Users,OU=UK,DC=cascade,DC=local
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: user
+cn: Ryan Thompson
+sn: Thompson
+givenName: Ryan
+distinguishedName: CN=Ryan Thompson,OU=Users,OU=UK,DC=cascade,DC=local
+instanceType: 4
+whenCreated: 20200109193126.0Z
+whenChanged: 20200708174135.0Z
+displayName: Ryan Thompson
+uSNCreated: 24610
+memberOf: CN=IT,OU=Groups,OU=UK,DC=cascade,DC=local
+uSNChanged: 319666
+name: Ryan Thompson
+objectGUID:: LfpD6qngUkupEy9bFXBBjA==
+userAccountControl: 66048
+badPwdCount: 0
+codePage: 0
+countryCode: 0
+badPasswordTime: 132387046937646532
+lastLogoff: 0
+lastLogon: 132387046997082637
+pwdLastSet: 132230718862636251
+primaryGroupID: 513
+objectSid:: AQUAAAAAAAUVAAAAMvuhxgsd8Uf1yHJFVQQAAA==
+accountExpires: 9223372036854775807
+logonCount: 2
+sAMAccountName: r.thompson
+sAMAccountType: 805306368
+userPrincipalName: r.thompson@cascade.local
+objectCategory: CN=Person,CN=Schema,CN=Configuration,DC=cascade,DC=local
+dSCorePropagationData: 20200126183918.0Z
+dSCorePropagationData: 20200119174753.0Z
+dSCorePropagationData: 20200119174719.0Z
+dSCorePropagationData: 20200119174508.0Z
+dSCorePropagationData: 16010101000000.0Z
+lastLogonTimestamp: 132387036952848995
+msDS-SupportedEncryptionTypes: 0
+allenwest1@debian:~/Desktop$ ldapsearch -x -h 10.10.10.182 -b "dc=CASCADE,dc=local"
+# extended LDIF
+#
+# LDAPv3
+# base <dc=CASCADE,dc=local> with scope subtree
+# filter: (objectclass=*)
+# requesting: ALL
+#
+
+# cascade.local
+dn: DC=cascade,DC=local
+objectClass: top
+objectClass: domain
+objectClass: domainDNS
+distinguishedName: DC=cascade,DC=local
+cascadeLegacyPwd: clk0bjVldmE=
+.
+.
+.
+// sAMAccountName: r.thompson
+// cascadeLegacyPwd: clk0bjVldmE=
+.
+.
+.
