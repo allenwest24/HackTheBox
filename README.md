@@ -10,7 +10,7 @@ and realize better strategies for the future.
 - Username: pwn3yb0i
 - Founder of 'DarkGrayHacks'
 - Users Owned: 19
-- Systems Owned: 12
+- Systems Owned: 13
 - Challenges Completed: 7
 - Ranks Achieved: Noob --> Script Kiddie --> Hacker --> 0% towards Pro Hacker 
 
