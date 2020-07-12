@@ -1,3 +1,2 @@
-# TOOLS!
-They're important, but there's alot of them. If you saw a tool in the write-ups you didn't understand, look in here to see if there is an explanation or 
-instructions on how to download them!
+# TOOLS
+They're important, but there's alot of them. When we have some free time, we will describe how to download/use some basic or weird tools used in HackTheBox! You can find this here!
