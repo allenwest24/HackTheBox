@@ -17,7 +17,7 @@ and realize better strategies for the future.
 ### ani2021
 - Username: ani2021
 - Team Member of 'DarkGrayHacks'
-- Users Owned: 2
+- Users Owned: 3
 - Systems Owned: 0
 - Challenges Completed: 0
 - Ranks Achieved: Noob 
