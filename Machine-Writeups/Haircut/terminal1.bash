@@ -70,3 +70,7 @@ Target reachableFound the following ports open:
 .
 .
 .
+// By going to http://10.10.10.24/exposed.php we find an interesting program searching for locations.
+.
+.
+.
