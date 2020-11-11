@@ -1,0 +1,9 @@
+All we are given is the info: 'Frank Vitalik is a hustler, can you figure out where the money flows?'
+Went to his user account and found another post braggin' about free coinz: https://www.reddit.com/user/frankvitalik/
+Clicked the link like a true moron and got to the site: https://steemit.com/htb/@freecoinz/freecoinz
+Found an Ethereum address! : 0x1b3247Cd0A59ac8B37A922804D150556dB837699
+And a user account: 'freecoinz'
+Going to use https://ropsten.etherscan.io/ to get some info on this block chain.
+I see a lot of transactions dating back a long time. I'm going to check out the first few.
+The first outgoing transaction: https://ropsten.etherscan.io/tx/0xe1320c23f292e52090e423e5cdb7b4b10d3c70a8d1b947dff25ae892609f2ef4
+In the 'view more' field there is an input value that can be translated to UTF-8 and reveals the flag!
