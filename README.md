@@ -11,7 +11,7 @@ and realize better strategies for the future.
 - Founder of 'DarkGrayHacks'
 - Users Owned: 19
 - Systems Owned: 13
-- Challenges Completed: 9
+- Challenges Completed: 10
 - Ranks Achieved: Noob --> Script Kiddie --> Hacker --> 0% towards Pro Hacker 
 
 ### ani2021
