@@ -1,0 +1,114 @@
+┌──(kali㉿kali)-[~/…/Reverse-The-World/CTFs/HackTheBox/Behind the Scenes]
+└─$ cd rev_behindthescenes 
+                                                                                                                                                                                                                                            
+┌──(kali㉿kali)-[~/…/CTFs/HackTheBox/Behind the Scenes/rev_behindthescenes]
+└─$ ls
+behindthescenes
+                                                                                                                                                                                                                                            
+┌──(kali㉿kali)-[~/…/CTFs/HackTheBox/Behind the Scenes/rev_behindthescenes]
+└─$ strings behindthescenes   
+/lib64/ld-linux-x86-64.so.2
+libc.so.6
+strncmp
+puts
+__stack_chk_fail
+printf
+strlen
+sigemptyset
+memset
+sigaction
+__cxa_finalize
+__libc_start_main
+GLIBC_2.4
+GLIBC_2.2.5
+_ITM_deregisterTMCloneTable
+__gmon_start__
+_ITM_registerTMCloneTable
+u+UH
+[]A\A]A^A_
+./challenge <password>
+> HTB{%s}
+:*3$"
+GCC: (Ubuntu 9.3.0-17ubuntu1~20.04) 9.3.0
+crtstuff.c
+deregister_tm_clones
+__do_global_dtors_aux
+completed.8060
+__do_global_dtors_aux_fini_array_entry
+frame_dummy
+__frame_dummy_init_array_entry
+main.c
+__FRAME_END__
+__init_array_end
+_DYNAMIC
+__init_array_start
+__GNU_EH_FRAME_HDR
+_GLOBAL_OFFSET_TABLE_
+__libc_csu_fini
+strncmp@@GLIBC_2.2.5
+_ITM_deregisterTMCloneTable
+puts@@GLIBC_2.2.5
+sigaction@@GLIBC_2.2.5
+_edata
+strlen@@GLIBC_2.2.5
+__stack_chk_fail@@GLIBC_2.4
+printf@@GLIBC_2.2.5
+memset@@GLIBC_2.2.5
+__libc_start_main@@GLIBC_2.2.5
+__data_start
+segill_sigaction
+sigemptyset@@GLIBC_2.2.5
+__gmon_start__
+__dso_handle
+_IO_stdin_used
+__libc_csu_init
+__bss_start
+main
+__TMC_END__
+_ITM_registerTMCloneTable
+__cxa_finalize@@GLIBC_2.2.5
+.symtab
+.strtab
+.shstrtab
+.interp
+.note.gnu.property
+.note.gnu.build-id
+.note.ABI-tag
+.gnu.hash
+.dynsym
+.dynstr
+.gnu.version
+.gnu.version_r
+.rela.dyn
+.rela.plt
+.init
+.plt.got
+.plt.sec
+.text
+.fini
+.rodata
+.eh_frame_hdr
+.eh_frame
+.init_array
+.fini_array
+.dynamic
+.data
+.bss
+.comment
+                                                                                                                                                                                                                                            
+┌──(kali㉿kali)-[~/…/CTFs/HackTheBox/Behind the Scenes/rev_behindthescenes]
+└─$ hexeditor behindthescenes 
+
+// Within hexeditor I used 'CTRL + w' to search for a string and when I searched 'HTB' I found the following:
+                                                                                                                                                                                                                                            
+┌──(kali㉿kali)-[~/…/CTFs/HackTheBox/Behind the Scenes/rev_behindthescenes]
+└─$ echo "																											/challenge 
+00002010  3C 70 61 73  73 77 6F 72   64 3E 00 49  74 7A 00 5F                                                                                                                                                               <password>.Itz._ 
+00002020  30 6E 00 4C  79 5F 00 55   44 32 00 3E  20 48 54 42                                                                                                                                                               0n.Ly_.UD2.> HTB 
+00002030  7B 25 73 7D  0A 00 00 00   01 1B 03 3B  4C 00 00 00                                                                                                                                                               {%s}"
+/challenge 
+00002010  3C 70 61 73  73 77 6F 72   64 3E 00 49  74 7A 00 5F                                                                                                                                                               <password>.Itz._
+00002020  30 6E 00 4C  79 5F 00 55   44 32 00 3E  20 48 54 42                                                                                                                                                               0n.Ly_.UD2.> HTB
+00002030  7B 25 73 7D  0A 00 00 00   01 1B 03 3B  4C 00 00 00                                                                                                                                                               {%s}
+
+// As you can see the contents surrounding '/challenge' and 'HTB' reveal more words, which happend to append to make the password: 'Itz_0nLy_UD2'
